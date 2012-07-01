@@ -14,8 +14,8 @@ development:
   reconnect: false
   database: official_development
   pool: 5
-  username: root
-  password:
+  username: lottery
+  password: lottery123456
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and

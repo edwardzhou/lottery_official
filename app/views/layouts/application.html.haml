@@ -1,0 +1,57 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title 首页
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body
+    .all
+      .wrapper
+        / 头部开始
+        .header
+          .headerleft
+        .clear
+        .nav
+          .nav1
+            %ul
+              %li
+                %a{:href => "#"} 開獎專區
+              %li
+                %a{:href => "#"} 新聞專區
+              %li
+                %a{:href => "#"} 經銷商專區
+              %li
+                %a{:href => "#"} 常見問題
+              %li
+                %a{:href => "#"} 銷售于兌獎
+              %li
+                %a{:href => "#"} 愛心公益
+              %li
+                %a{:href => "#"} 聯繫我們
+        .clear
+        / 头部结束
+        .contentbg
+          .content
+            .content_top
+              .content_top_case
+                %p 體彩福彩
+                %p 六和彩
+                %p 3D彩
+            .content_min
+              %a{:href => "#"} 精彩十分開獎
+              %a{:href => "#"} 精彩十分開獎時間
+              %a{:href => "#"} 台精彩十分开獎公告
+              %a{:href => "#"} 精彩十分開獎結果
+              %a{:href => "#"} 精彩十分歷史開獎
+              %a{:href => "#"} 精彩十分技巧
+              %a{:href => "#"} 精彩十分圖標走勢
+              %a{:href => "#"} 精彩十分規則
+        = yield
+
+      / 底部开始
+      .footer
+        .footer1
+      .clear
+      / 底部结束

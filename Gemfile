@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.3'
 
@@ -6,6 +7,22 @@ gem 'rails', '3.2.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+
+
+gem 'bson_ext'
+gem 'mongo', '1.6.2'
+gem 'mongodb'
+gem 'mongoid', '2.4.11'
+gem 'haml'
+gem 'sass'
+gem 'therubyracer'
+
+gem 'rabl'
+gem 'gon'
+
+#gem "will_paginate_mongoid"
+
+gem 'bcrypt-ruby', :require => 'bcrypt'
 
 
 # Gems used only for assets and not required
@@ -29,7 +46,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'

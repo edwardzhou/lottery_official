@@ -1,6 +1,9 @@
 Official::Application.routes.draw do
 
   resources :home
+
+  match '/guide' => "home#guide", :as => :guide
+
   root :to => "home#index"
 
   # The priority is based upon order of creation:

@@ -20,7 +20,7 @@ gem 'therubyracer'
 gem 'rabl'
 gem 'gon'
 
-#gem "will_paginate_mongoid"
+gem "will_paginate_mongoid"
 
 gem 'bcrypt-ruby', :require => 'bcrypt'
 

@@ -3,6 +3,7 @@ Official::Application.routes.draw do
   resources :home
 
   match '/guide' => "home#guide", :as => :guide
+  match '/list' => "home#history", :as => :history
 
   root :to => "home#index"
 

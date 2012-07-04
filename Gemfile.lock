@@ -126,6 +126,10 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    will_paginate (3.0.3)
+    will_paginate_mongoid (1.0.5)
+      mongoid (~> 2.4)
+      will_paginate (~> 3.0.2)
 
 PLATFORMS
   ruby
@@ -148,3 +152,4 @@ DEPENDENCIES
   therubyracer
   uglifier (>= 1.0.3)
   unicorn
+  will_paginate_mongoid

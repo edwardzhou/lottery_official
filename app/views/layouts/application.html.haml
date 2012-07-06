@@ -2,9 +2,17 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %title 首页
+    = include_gon
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
+    = yield(:page_include_scripts) if content_for?(:page_include_scripts)
+
     = csrf_meta_tags
+
+    = yield(:page_include_css) if content_for?(:page_include_css)
+    = yield(:page_inline_css) if content_for?(:page_inline_css)
+    = yield(:page_inline_scripts) if content_for?(:page_inline_scripts)
+
 
   %body
     #overmain
@@ -25,7 +33,7 @@
                       = link_to guide_path do
                         = image_tag "menu_02.jpg", :alt => "台湾福利彩彩购指南", :border => "0"
                     %li
-                      %a{:href => "http://twjhc.com/history/list.asp"}
+                      = link_to history_path do
                         = image_tag "menu_09.jpg", :alt => "台湾福利彩开奖记录", :border => "0"
                     %li
                       %a{:href => "http://twjhc.com/certificate.asp"}

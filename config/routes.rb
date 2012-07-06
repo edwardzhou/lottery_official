@@ -1,6 +1,12 @@
 Official::Application.routes.draw do
 
-  resources :home
+  resources :home do
+    collection do
+      get "guide"
+      get "list", :as => :history
+    end
+  end
+
 
   match '/guide' => "home#guide", :as => :guide
   match '/list' => "home#history", :as => :history

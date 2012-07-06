@@ -20,15 +20,12 @@ jQuery ->
         {name: 'ball_7', label: "7", width: 30, sortable: false}
         {name: 'ball_8', label: "8", width: 30, sortable: false}
         {name: 'sum', label: "總和", width: 35, sortable: false}
-        {name: 'sum_big_small', label: "大小", width: 35, sortable: false}
-        {name: 'sum_even_odd', label: "單雙", width: 35, sortable: false}
-        {name: 'sum_trail_big_small', label: "尾大小", width: 50, sortable: false}
         {name: 'dragon_tiger', label: "龍虎", width: 40, sortable: false}
       ],
       jsonReader : {
-      root:"rows",
-      repeatitems: false,
-      id: "_id"
+        root:"rows",
+        repeatitems: false,
+        id: "_id"
       },
       pager: '#pager',
       rowNum: 20,
@@ -43,14 +40,6 @@ jQuery ->
       #width: 600,
       id: "_id"
 
-    })
-
-    jQuery("#history_list").jqGrid('setGroupHeaders', {
-      useColSpanStyle: false,
-      groupHeaders: [
-        {startColumnName: "ball_1", numberOfColumns: 8, titleText: "<em>開出號碼</em>"},
-        {startColumnName: "sum", numberOfColumns: 4, titleText: "<em>總和</em>"}
-      ]
     })
 
 

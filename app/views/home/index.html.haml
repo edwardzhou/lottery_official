@@ -6,14 +6,15 @@
     %ul
       %li.lt
       %li.mt
-
+        #result
+          = render :partial => "result"
       %li.rt
   #indexcont
     %ul
       %li.top
       %li.area
         %p
-          %img{:align => "left", :alt => "台湾金多寶开奖现场", :src => "index.asp_files/a_01.jpg", :style => "margin-right: 10px; margin-bottom: 5px;"}>/
+          = image_tag "a_01.jpg", :align => "left", :alt => "台湾金多寶开奖现场", :style => "margin-right: 10px; margin-bottom: 5px;"
           \&nbsp;&nbsp;&nbsp;&nbsp;
           台灣福彩從事的是對國家與社會公益充滿影響力的産業,深受彩民信賴,期盼持續努力提升社會對彩劵産業的信任與好感,社會公益彩劵的愛心傳遞到台灣每個角落.
         %p &nbsp;
@@ -22,5 +23,5 @@
         %p &nbsp;
         %p &nbsp;&nbsp;&nbsp;&nbsp;精彩十分是台灣彩劵開發的一種全新的快速開獎遊戲,精彩十分將于2009年1月1日發往銷售,精彩十分從早上10點開始到零晨2點結束.每10分鍾就開獎一期,共開108期.特點,返獎高,開獎快,更好玩,共有10種玩法,排列,組合,數字,顔色都可選投注者從01~20的數字中選擇,每期開出8個中獎號碼.台灣&quot;精彩十分&quot;在各省,[區,市]實行統一各稱,統一遊戲規則,統一開獎號碼.當期獎全銷售總額的百分之58,調節基金委銷售總額的百分之1規定如下. 　　
         %p{:style => "text-align:right; font-weight:bold; color:#F30;"}
-          %a{:href => "http://twjhc.com/gczn.asp", :style => "color: rgb(255, 51, 0);"} &gt;&gt;&gt; 点击这里查看详情
+          = link_to ">>> 点击这里查看详情", guide_path, :style => "color: rgb(255, 51, 0);"
       %li.boot

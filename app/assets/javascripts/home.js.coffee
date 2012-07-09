@@ -30,7 +30,7 @@ jQuery ->
       pager: '#pager',
       rowNum: 20,
       rowList:[20, 40, 60, 100],
-      sortname: 'stat_time',
+      sortname: 'end_time',
       sortorder: 'asc',
       viewrecords: true,
       gridview: true,

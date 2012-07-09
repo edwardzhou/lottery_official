@@ -42,5 +42,7 @@ jQuery ->
 
     })
 
+    jQuery("#history_list").jqGrid('navGrid','#pager',{del:false,add:false,edit:false,search:false});
+
 
 
